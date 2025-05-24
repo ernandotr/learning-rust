@@ -208,6 +208,22 @@ fn main() {
     let is_non_zero = number1 != 0;
     println!("Is {} non-zero? {}", number1, is_non_zero);
 
-    
+    // Checking if the number is prime
+    println!("\nChecking if {} is a prime number:", number1);
+    let is_prime = is_prime(number1);
+    println!("Is {} prime? {}", number1, is_prime); 
+}
+
+// Function to check if a number is prime
+fn is_prime(n: i32) -> bool {
+    if n <= 1 {
+        return false;
+    }
+    for i in 2..=((n as f64).sqrt() as i32) {
+        if n % i == 0 {
+            return false;
+        }
+    }
+    true
 
 }
