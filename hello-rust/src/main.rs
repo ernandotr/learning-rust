@@ -149,5 +149,10 @@ fn main() {
         _ => println!("The number is something else."),
     }
 
-    
+    // Demonstrating the use of a for loop
+    println!("\nLoop 'for' example:");
+    for i in 1..=5 {
+        println!("Iteration number: {}", i);
+    }
+
 }
