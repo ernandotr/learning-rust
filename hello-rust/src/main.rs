@@ -68,5 +68,15 @@ fn main() {
     println!("Alice's age is {}.", hash_map_example.get("Alice").unwrap());
     println!("Bob's age is {}.", hash_map_example.get("Bob").unwrap());
 
+    // Demonstrating the use of a set
+    use std::collections::HashSet;
+    let mut hash_set_example: HashSet<&str> = HashSet::new();
+    hash_set_example.insert("apple");
+    hash_set_example.insert("banana");
+    hash_set_example.insert("cherry");
+    println!("\nHashSet example: {:?}", hash_set_example);
+    println!("Does the set contain 'apple'? {}", hash_set_example.contains("apple"));
+    println!("Does the set contain 'grape'? {}", hash_set_example.contains("grape"));
+
     
 }
