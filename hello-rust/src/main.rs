@@ -155,4 +155,14 @@ fn main() {
         println!("Iteration number: {}", i);
     }
 
+    // Demonstrating the use of a while loop
+    println!("\nLoop 'while' example:");
+    let mut count = 0;
+    while count < 5 {
+        println!("Count is: {}", count);
+        count += 1;
+    }
+
+    
+
 }
