@@ -59,5 +59,14 @@ fn main() {
     println!("The first character of the string is '{}'.", string_example.chars().next().unwrap());
     println!("The last character of the string is '{}'.", string_example.chars().last().unwrap());
 
+    // Demonstrating the use of a hash map
+    use std::collections::HashMap;
+    let mut hash_map_example: HashMap<&str, i32> = HashMap::new();
+    hash_map_example.insert("Alice", 25);
+    hash_map_example.insert("Bob", 30);
+    println!("\nHashMap example: {:?}", hash_map_example);
+    println!("Alice's age is {}.", hash_map_example.get("Alice").unwrap());
+    println!("Bob's age is {}.", hash_map_example.get("Bob").unwrap());
+
     
 }
