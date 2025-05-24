@@ -122,5 +122,22 @@ fn main() {
     let product_result = multiply(6, 7);
     println!("\nFunction example: The product of 6 and 7 is {}.", product_result);
 
+    // Demonstrating error handling with Result
+    fn divide(x: i32, y: i32) -> Result<i32, String> {
+        if y == 0 {
+            Err(String::from("Cannot divide by zero"))
+        } else {
+            Ok(x / y)
+        }
+    }
+    match divide(10, 2) {
+        Ok(result) => println!("\nError handling example: 10 divided by 2 is {}.", result),
+        Err(e) => println!("\nError handling example: {}", e),
+    }
+    match divide(10, 0) {
+        Ok(result) => println!("10 divided by 0 is {}.", result),
+        Err(e) => println!("Error: {}", e),
+    }
+
     
 }
