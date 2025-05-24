@@ -40,5 +40,11 @@ fn main() {
     println!("The second element of the tuple is {}.", tuple_example.1);
     println!("The third element of the tuple is {}.", tuple_example.2);
 
+    // Demonstrating the use of an array
+    let array_example: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("\nArray example: {:?}", array_example);
+    println!("The first element of the array is {}.", array_example[0]);
+    println!("The second element of the array is {}.", array_example[1]);
+
     
 }
