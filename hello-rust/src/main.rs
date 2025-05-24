@@ -7,7 +7,7 @@ fn main() {
     let age: i16 = 25; // or let age = 30;
     println!("Hello, {} your age is {} !", name, age);
 
-    let number1 = 7;
+    let number1: i32 = 7;
     let number2 = 20;
 
     // Performing various arithmetic operations
@@ -22,6 +22,18 @@ fn main() {
     println!("The quotient of {} and {} is {}.", number1, number2, quotient);
     let remainder = number1 % number2;
     println!("The remainder of {} divided by {} is {}.", number1, number2, remainder);
+    
+ // Importing the Pow trait for power operations
+    // Ensure you have the num crate in your Cargo.toml
+    // Add the following line to your Cargo.toml:
+    // [dependencies]
+    // num = "0.4" (or the latest version)
+    // Demonstrating the use of the pow function
+    let power = number1.pow(2); // Squaring the number
+    println!("The square of {} is {}.", number1, power);
+    let power_of_three = number2.pow(3); // Cubing the number
+    println!("The cube of {} is {}.", number2, power_of_three);
+
     
     // Demonstrating the use of a constant
     const PI: f64 = 3.14159;
@@ -212,6 +224,7 @@ fn main() {
     println!("\nChecking if {} is a prime number:", number1);
     let is_prime = is_prime(number1);
     println!("Is {} prime? {}", number1, is_prime); 
+
 }
 
 // Function to check if a number is prime
