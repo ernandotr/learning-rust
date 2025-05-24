@@ -46,5 +46,11 @@ fn main() {
     println!("The first element of the array is {}.", array_example[0]);
     println!("The second element of the array is {}.", array_example[1]);
 
+    // Demonstrating the use of a vector
+    let vector_example: Vec<i32> = vec![10, 20, 30, 40, 50];
+    println!("\nVector example: {:?}", vector_example);
+    println!("The first element of the vector is {}.", vector_example[0]);
+    println!("The second element of the vector is {}.", vector_example[1]);
+
     
 }
