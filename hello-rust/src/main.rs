@@ -55,7 +55,35 @@ fn main() {
     let absolute_value = negative_number.abs(); // Getting the absolute value
     println!("\nThe absolute value of {} is {}.", negative_number, absolute_value);
 
+    // Performing various comparisons
+    println!("\nComparisons between {} and {}:", number1, number2);
+    let is_greater = number1 > number2;
+    println!("Is {} greater than {}? {}", number1, number2, is_greater);
+    let is_less = number1 < number2;
+    println!("Is {} less than {}? {}", number1, number2, is_less);
+    let is_equal = number1 == number2;
+    println!("Is {} equal to {}? {}", number1, number2, is_equal);
+    let is_not_equal = number1 != number2;
+    println!("Is {} not equal to {}? {}", number1, number2, is_not_equal);
+    let is_greater_or_equal = number1 >= number2;
+    println!("Is {} greater than or equal to {}? {}", number1, number2, is_greater_or_equal);
+    let is_less_or_equal = number1 <= number2;
+    println!("Is {} less than or equal to {}? {}", number1, number2, is_less_or_equal);
     
+    // Checking if the number is even, odd, positive, negative, zero, or non-zero
+    let is_even = number1 % 2 == 0;
+    println!("Is {} even? {}", number1, is_even);
+    let is_odd = number1 % 2 != 0;
+    println!("Is {} odd? {}", number1, is_odd);
+    let is_positive = number1 > 0;
+    println!("Is {} positive? {}", number1, is_positive);
+    let is_negative = number1 < 0;
+    println!("Is {} negative? {}", number1, is_negative);
+    let is_zero = number1 == 0;
+    println!("Is {} zero? {}", number1, is_zero);
+    let is_non_zero = number1 != 0;
+    println!("Is {} non-zero? {}", number1, is_non_zero);
+
     // Demonstrating the use of a constant
     const PI: f64 = 3.14159;
     println!("\nThe value of PI is approximately {:.5}.", PI);
