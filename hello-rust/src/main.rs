@@ -179,4 +179,20 @@ fn main() {
         println!("Current number: {}", i);
     }
 
+    // Performing various comparisons
+    println!("\nComparisons between {} and {}:", number1, number2);
+    let is_greater = number1 > number2;
+    println!("Is {} greater than {}? {}", number1, number2, is_greater);
+    let is_less = number1 < number2;
+    println!("Is {} less than {}? {}", number1, number2, is_less);
+    let is_equal = number1 == number2;
+    println!("Is {} equal to {}? {}", number1, number2, is_equal);
+    let is_not_equal = number1 != number2;
+    println!("Is {} not equal to {}? {}", number1, number2, is_not_equal);
+    let is_greater_or_equal = number1 >= number2;
+    println!("Is {} greater than or equal to {}? {}", number1, number2, is_greater_or_equal);
+    let is_less_or_equal = number1 <= number2;
+    println!("Is {} less than or equal to {}? {}", number1, number2, is_less_or_equal);
+    
+
 }
