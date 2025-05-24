@@ -115,5 +115,12 @@ fn main() {
     let result = add(5, 10);
     println!("\nClosure example: The sum of 5 and 10 is {}.", result);
 
+    // Demonstrating the use of a function
+    fn multiply(x: i32, y: i32) -> i32 {
+        x * y
+    }
+    let product_result = multiply(6, 7);
+    println!("\nFunction example: The product of 6 and 7 is {}.", product_result);
+
     
 }
