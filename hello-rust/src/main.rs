@@ -163,6 +163,20 @@ fn main() {
         count += 1;
     }
 
-    
+    // Demonstrating the use of a loop with break and continue
+    println!("\nLoop with break and continue example:");
+    let mut i = 0;
+    loop {
+        i += 1;
+        if i == 3 {
+            println!("Skipping number 3.");
+            continue; // Skip the rest of the loop for this iteration
+        }
+        if i > 5 {
+            println!("Breaking the loop at number {}.", i);
+            break; // Exit the loop
+        }
+        println!("Current number: {}", i);
+    }
 
 }
