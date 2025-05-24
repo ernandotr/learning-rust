@@ -52,5 +52,12 @@ fn main() {
     println!("The first element of the vector is {}.", vector_example[0]);
     println!("The second element of the vector is {}.", vector_example[1]);
 
+    // Demonstrating the use of a string
+    let string_example: String = String::from("Hello, Rust!");
+    println!("\nString example: {}", string_example);
+    println!("The length of the string is {} characters.", string_example.len());
+    println!("The first character of the string is '{}'.", string_example.chars().next().unwrap());
+    println!("The last character of the string is '{}'.", string_example.chars().last().unwrap());
+
     
 }
