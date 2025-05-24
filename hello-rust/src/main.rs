@@ -2,6 +2,10 @@
 // You can change the values of `name` and `age` to see different outputs.
 // To run this program, use the command: cargo run
 
+use std::f32::consts::SQRT_2;
+
+use num::integer::Roots;
+
 fn main() {
     let name: &'static str = "Alice"; // or let name = "Bob";
     let age: i16 = 25; // or let age = 30;
@@ -33,6 +37,18 @@ fn main() {
     println!("The square of {} is {}.", number1, power);
     let power_of_three = number2.pow(3); // Cubing the number
     println!("The cube of {} is {}.", number2, power_of_three);
+
+    // Demonstrating the use of square root and cube root functions
+    let square_root = number1.sqrt(); // Calculating the square root
+    println!("The square root of {} is {:.2}.", number1, square_root);
+    let cube_root = number2.cbrt(); // Calculating the cube root
+    println!("The cube root of {} is {:.2}.", number2, cube_root);
+    let sqrt_2 = SQRT_2; // Using a constant from the std::f32::consts module
+    println!("The square root of 2 is approximately {:.2}.", sqrt_2);
+    let sqrt_2_f64 = SQRT_2 as f64; // Converting to f64
+    println!("The square root of 2 as f64 is approximately {:.2}.", sqrt_2_f64);
+    let sqrt_2_f32 = SQRT_2 as f32; // Converting to f32
+    println!("The square root of 2 as f32 is approximately {:.2}.", sqrt_2_f32);
 
     
     // Demonstrating the use of a constant
