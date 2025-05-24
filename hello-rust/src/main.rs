@@ -26,4 +26,11 @@ fn main() {
     // Demonstrating the use of a constant
     const PI: f64 = 3.14159;
     println!("\nThe value of PI is approximately {:.5}.", PI);
+
+    // Demonstrating the use of a mutable variable
+    let mut mutable_number = 10;
+    println!("\nThe initial value of mutable_number is {}.", mutable_number);
+    mutable_number += 5; // Incrementing the mutable variable
+    println!("After incrementing, mutable_number is now {}.", mutable_number);
+    
 }
