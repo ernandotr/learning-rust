@@ -50,6 +50,11 @@ fn main() {
     let sqrt_2_f32 = SQRT_2 as f32; // Converting to f32
     println!("The square root of 2 as f32 is approximately {:.2}.", sqrt_2_f32);
 
+    // Demonstrating the use of absolute value
+    let negative_number: i32 = -15;
+    let absolute_value = negative_number.abs(); // Getting the absolute value
+    println!("\nThe absolute value of {} is {}.", negative_number, absolute_value);
+
     
     // Demonstrating the use of a constant
     const PI: f64 = 3.14159;
