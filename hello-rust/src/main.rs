@@ -78,5 +78,22 @@ fn main() {
     println!("Does the set contain 'apple'? {}", hash_set_example.contains("apple"));
     println!("Does the set contain 'grape'? {}", hash_set_example.contains("grape"));
 
+    // Demonstrating the use of an enum
+    #[derive(Debug)]
+    enum Direction {
+        North,
+        South,
+        East,
+        West,
+    }
+    let direction = Direction::North;
+    println!("\nEnum example: {:?}", direction);
+    match direction {
+        Direction::North => println!("The direction is North."),
+        Direction::South => println!("The direction is South."),
+        Direction::East => println!("The direction is East."),
+        Direction::West => println!("The direction is West."),
+    }
+
     
 }
