@@ -108,5 +108,12 @@ fn main() {
     println!("\nStruct example: {:?}", person);
     println!("Person's name is {} and age is {}.", person.name, person.age);
 
+    // Demonstrating the use of a closure
+    let add = |x: i32, y: i32| -> i32 {
+        x + y
+    };
+    let result = add(5, 10);
+    println!("\nClosure example: The sum of 5 and 10 is {}.", result);
+
     
 }
