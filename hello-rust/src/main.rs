@@ -95,5 +95,18 @@ fn main() {
         Direction::West => println!("The direction is West."),
     }
 
+    // Demonstrating the use of a struct
+    #[derive(Debug)]
+    struct Person {
+        name: String,
+        age: u32,
+    }
+    let person = Person {
+        name: String::from("Alice"),
+        age: 30,
+    };
+    println!("\nStruct example: {:?}", person);
+    println!("Person's name is {} and age is {}.", person.name, person.age);
+
     
 }
