@@ -1,5 +1,4 @@
 // This is a simple Rust program that prints a greeting message with a name and age.
-// You can change the values of `name` and `age` to see different outputs.
 // To run this program, use the command: cargo run
 
 use std::f32::consts::SQRT_2;
@@ -9,6 +8,7 @@ use num::integer::Roots;
 fn main() {
     let name: &'static str = "Alice"; // or let name = "Bob";
     let age: i16 = 25; // or let age = 30;
+    // You can change the values of `name` and `age` to see different outputs.
     println!("Hello, {} your age is {} !", name, age);
 
     let number1: i32 = 7;
@@ -27,7 +27,7 @@ fn main() {
     let remainder = number1 % number2;
     println!("The remainder of {} divided by {} is {}.", number1, number2, remainder);
     
- // Importing the Pow trait for power operations
+    // Importing the Pow trait for power operations
     // Ensure you have the num crate in your Cargo.toml
     // Add the following line to your Cargo.toml:
     // [dependencies]
