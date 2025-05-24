@@ -139,5 +139,15 @@ fn main() {
         Err(e) => println!("Error: {}", e),
     }
 
+    // Demonstrating the use of pattern matching
+    let number = 42;
+    println!("\nPattern matching example:");
+    match number {
+        1 => println!("The number is one."),
+        2 => println!("The number is two."),
+        42 => println!("The answer to life, the universe, and everything is 42!"),
+        _ => println!("The number is something else."),
+    }
+
     
 }
