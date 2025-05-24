@@ -32,5 +32,13 @@ fn main() {
     println!("\nThe initial value of mutable_number is {}.", mutable_number);
     mutable_number += 5; // Incrementing the mutable variable
     println!("After incrementing, mutable_number is now {}.", mutable_number);
+
+    // Demonstrating the use of a tuple
+    let tuple_example: (i32, f64, char) = (42, 3.14, 'x');
+    println!("\nTuple example: {:?}", tuple_example);
+    println!("The first element of the tuple is {}.", tuple_example.0);
+    println!("The second element of the tuple is {}.", tuple_example.1);
+    println!("The third element of the tuple is {}.", tuple_example.2);
+
     
 }
