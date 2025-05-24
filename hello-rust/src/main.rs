@@ -194,5 +194,20 @@ fn main() {
     let is_less_or_equal = number1 <= number2;
     println!("Is {} less than or equal to {}? {}", number1, number2, is_less_or_equal);
     
+    // Checking if the number is even, odd, positive, negative, zero, or non-zero
+    let is_even = number1 % 2 == 0;
+    println!("Is {} even? {}", number1, is_even);
+    let is_odd = number1 % 2 != 0;
+    println!("Is {} odd? {}", number1, is_odd);
+    let is_positive = number1 > 0;
+    println!("Is {} positive? {}", number1, is_positive);
+    let is_negative = number1 < 0;
+    println!("Is {} negative? {}", number1, is_negative);
+    let is_zero = number1 == 0;
+    println!("Is {} zero? {}", number1, is_zero);
+    let is_non_zero = number1 != 0;
+    println!("Is {} non-zero? {}", number1, is_non_zero);
+
+    
 
 }
