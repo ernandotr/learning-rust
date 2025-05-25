@@ -1,3 +1,4 @@
 hello-rust/target/**
 io-rust/target/**
 sum-digits/target/**
+fatorial/target/**
