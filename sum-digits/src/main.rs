@@ -1,5 +1,6 @@
 use std::io;
 
+// Function to read an integer from standard input and return it
 fn read_int() -> i32 {
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
@@ -7,6 +8,7 @@ fn read_int() -> i32 {
     num
 }
 
+// Main function to calculate the sum of digits of an integer
 fn main() {
     println!("Enter an integer:");
     let mut number = read_int();
