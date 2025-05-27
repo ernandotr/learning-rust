@@ -1,10 +1,20 @@
 use  std::io;
 
+fn read_int() -> i32 {
+    // Function to read an integer from standard input
+    // It reads a line, trims it, and attempts to parse it into an i32.
+    // If parsing fails, it returns 0.
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    convert_to_int(&input)
+    
+}
+
 // Function to convert a string to an integer
 // This function attempts to parse a string into an i32.
 // If parsing fails, it returns a default value of 0.
 // It trims any whitespace from the input string before parsing.
-fn convert_to_inte(input: &str) -> i32 {
+fn convert_to_int(input: &str) -> i32 {
     match input.trim().parse::<i32>() {
         Ok(num) => num,
         Err(_) => 0, // Default value if parsing fails
@@ -13,7 +23,7 @@ fn convert_to_inte(input: &str) -> i32 {
 }
 
 fn main() {
-    fn main() {
+
     println!("Enter the number of grades:");
     let number = read_int();
     let mut sum = 0;
