@@ -13,16 +13,38 @@ fn convert_to_inte(input: &str) -> i32 {
 }
 
 fn main() {
-    // Prompt the user for input
-    println!("Please enter a number:");
+    fn main() {
+    println!("Enter the number of grades:");
+    let number = read_int();
+    let mut sum = 0;
 
-    // Read input from the user
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).expect("Failed to read line");
+    let mut  count = 0;
+    while count <  number {
+    println!("Enter grade {}:", count + 1);
+    // Read the grade from input
+        let grade  = read_int();
+        sum += grade;
+        count += 1;
+    }
 
-    // Convert the input to an integer
-    let number = convert_to_inte(&input);
+    // Print the sum of the grades
+    println!("Sum of grades: {}", sum);
 
-    // Print the converted number
-    println!("The converted number is: {}", number);
+    // Check if the number of grades is valid
+    if number == 0 {
+        println!("No grades entered.");
+        return;
+    }
+
+    // Check if the number of grades is negative
+    if number < 0 {
+        println!("Number of grades cannot be negative.");
+        return;
+    }
+
+    // Calculate the average of the grades
+    let avarage = sum as f32 / number as f32;
+    println!("Average grade: {:.2}", avarage);
+    
+
 }
