@@ -3,4 +3,4 @@ io-rust/target/**
 sum-digits/target/**
 fatorial/target/**
 cal-avarage/target/**
-
+mdc/target/**
