@@ -53,6 +53,23 @@ fn main() {
     }
 
     // Calculate the average of the grades
+    // The average is calculated by dividing the sum of grades by the number of grades.
+    if number == 0 {
+        println!("No grades to calculate average.");
+        return;
+    }
+    if sum < 0 {
+        println!("Sum of grades cannot be negative.");
+        return;
+    }
+    if sum == 0 {
+        println!("Sum of grades is zero, average cannot be calculated.");
+        return;
+    }
+    if sum > 1000 {
+        println!("Sum of grades is too high, average cannot be calculated.");
+        return;
+    }
     let avarage = sum as f32 / number as f32;
     println!("Average grade: {:.2}", avarage);
     
